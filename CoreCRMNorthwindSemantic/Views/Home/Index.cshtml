@@ -1,94 +1,550 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
+
+<h1 class="ui dividing header">
+    Buttons
+</h1>
+<p>
+    <div id="sidemenutoggle" class="ui large button">
+        Default
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+    <div class="ui large blue button">
+        Primary
+    </div>
+    <div class="ui large green button">
+        Success
+    </div>
+    <div class="ui large teal button">
+        Teal
+    </div>
+    <div class="ui large orange button">
+        Warning
+    </div>
+    <div class="ui large red button">
+        Danger
+    </div>
+    <div class="ui large basic button">
+        Link
+    </div>
+</p>
+<p>
+    <div class="ui medium button">
+        Default
+    </div>
+    <div class="ui medium blue button">
+        Primary
+    </div>
+    <div class="ui medium green button">
+        Success
+    </div>
+    <div class="ui medium teal button">
+        Teal
+    </div>
+    <div class="ui medium orange button">
+        Warning
+    </div>
+    <div class="ui medium red button">
+        Danger
+    </div>
+    <div class="ui medium basic button">
+        Link
+    </div>
+</p>
+<p>
+    <div class="ui small button">
+        Default
+    </div>
+    <div class="ui small blue button">
+        Primary
+    </div>
+    <div class="ui small green button">
+        Success
+    </div>
+    <div class="ui small teal button">
+        Teal
+    </div>
+    <div class="ui small orange button">
+        Warning
+    </div>
+    <div class="ui small red button">
+        Danger
+    </div>
+    <div class="ui small basic button">
+        Link
+    </div>
+</p>
+<p>
+    <div class="ui mini button">
+        Default
+    </div>
+    <div class="ui mini blue button">
+        Primary
+    </div>
+    <div class="ui mini green button">
+        Success
+    </div>
+    <div class="ui mini teal button">
+        Teal
+    </div>
+    <div class="ui mini orange button">
+        Warning
+    </div>
+    <div class="ui mini red button">
+        Danger
+    </div>
+    <div class="ui mini basic button">
+        Link
+    </div>
+</p>
+<h1 class="ui dividing header">
+    Tables
+</h1>
+<h1 class="ui dividing header">
+    Thumbnails
+</h1>
+<img class="ui small image" src="../../static/kitchen-sink/images/wireframe/image.png" />
+<h1 class="ui dividing header">
+    Labels
+</h1>
+<p>
+    <div class="ui massive label">
+        Default
+    </div>
+    <div class="ui massive blue label">
+        Primary
+    </div>
+    <div class="ui massive green label">
+        Success
+    </div>
+    <div class="ui massive teal label">
+        Info
+    </div>
+    <div class="ui massive orange label">
+        Warning
+    </div>
+    <div class="ui massive red label">
+        Danger
+    </div>
+</p>
+<p>
+    <div class="ui huge label">
+        Default
+    </div>
+    <div class="ui huge blue label">
+        Primary
+    </div>
+    <div class="ui huge green label">
+        Success
+    </div>
+    <div class="ui huge teal label">
+        Info
+    </div>
+    <div class="ui huge orange label">
+        Warning
+    </div>
+    <div class="ui huge red label">
+        Danger
+    </div>
+</p>
+<p>
+    <div class="ui big label">
+        Default
+    </div>
+    <div class="ui big blue label">
+        Primary
+    </div>
+    <div class="ui big green label">
+        Success
+    </div>
+    <div class="ui big teal label">
+        Info
+    </div>
+    <div class="ui big orange label">
+        Warning
+    </div>
+    <div class="ui big red label">
+        Danger
+    </div>
+</p>
+<p>
+    <div class="ui large label">
+        Default
+    </div>
+    <div class="ui large blue label">
+        Primary
+    </div>
+    <div class="ui large green label">
+        Success
+    </div>
+    <div class="ui large teal label">
+        Info
+    </div>
+    <div class="ui large orange label">
+        Warning
+    </div>
+    <div class="ui large red label">
+        Danger
+    </div>
+</p>
+<p>
+    <div class="ui medium label">
+        Default
+    </div>
+    <div class="ui medium blue label">
+        Primary
+    </div>
+    <div class="ui medium green label">
+        Success
+    </div>
+    <div class="ui medium teal label">
+        Info
+    </div>
+    <div class="ui medium orange label">
+        Warning
+    </div>
+    <div class="ui medium red label">
+        Danger
+    </div>
+</p>
+<p>
+    <div class="ui small label">
+        Default
+    </div>
+    <div class="ui small blue label">
+        Primary
+    </div>
+    <div class="ui small green label">
+        Success
+    </div>
+    <div class="ui small teal label">
+        Info
+    </div>
+    <div class="ui small orange label">
+        Warning
+    </div>
+    <div class="ui small red label">
+        Danger
+    </div>
+</p>
+<p>
+    <div class="ui tiny label">
+        Default
+    </div>
+    <div class="ui tiny blue label">
+        Primary
+    </div>
+    <div class="ui tiny green label">
+        Success
+    </div>
+    <div class="ui tiny teal label">
+        Info
+    </div>
+    <div class="ui tiny orange label">
+        Warning
+    </div>
+    <div class="ui tiny red label">
+        Danger
+    </div>
+</p>
+<p>
+    <div class="ui mini label">
+        Default
+    </div>
+    <div class="ui mini blue label">
+        Primary
+    </div>
+    <div class="ui mini green label">
+        Success
+    </div>
+    <div class="ui mini teal label">
+        Info
+    </div>
+    <div class="ui mini orange label">
+        Warning
+    </div>
+    <div class="ui mini red label">
+        Danger
+    </div>
+</p>
+<h1 class="ui dividing header">
+    Badges
+</h1>
+<a class="item" href="#">
+    Inbox
+    <div class="ui small label">
+        42
+    </div>
+</a><br />
+<div class="ui secondary compact menu" id="badges">
+    <a class="active item" href="#">
+        Home
+        <div class="ui small label">
+            42
+        </div>
+    </a><a class="item" href="#">
+        Profile
+        <div class="ui small label">
+            53
+        </div>
+    </a><a class="item" href="#">
+        Messages
+        <div class="ui small label">
+            3
+        </div>
     </a>
 </div>
-
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+<h1 class="ui dividing header">
+    Dropdown menus
+</h1>
+<div class="ui vertical borderless menu">
+    <a class="active item">Action</a><a class="item">Another action</a><a class="item">Something else here</a>
+    <div class="ui fitted divider"></div>
+    <a class="item">Separated link</a>
+</div>
+<h1 class="ui dividing header">
+    Navs
+</h1>
+<div class="ui tabular menu">
+    <a class="active item" data-tab="home">Home</a><a class="item" data-tab="profile">Profile</a><a class="item" data-tab="messages">Messages</a>
+</div>
+<div class="ui secondary menu">
+    <a class="active item">Home</a><a class="item">Profile</a><a class="item">Messages</a>
+</div>
+<h1 class="ui dividing header">
+    Navbars
+</h1>
+<div class="ui borderless menu">
+    <div class="ui container">
+        <a class="header item" href="#">Project name</a><a class="active item" href="#">Home</a><a class="item" href="#">About</a><a class="item" href="#">Contact</a>
+        <div class="ui dropdown item">
+            Dropdown
+            <div class="i dropdown icon"></div>
+            <div class="menu">
+                <a class="item" href="#">Action</a><a class="item" href="#">Another action</a><a class="item" href="#">Something else here</a>
+                <div class="ui fitted divider"></div>
+                <div class="header">
+                    Nav header
+                </div>
+                <a class="item" href="#">Separated link</a><a class="item" href="#">One more separated link</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
+</div>
+<div class="ui inverted borderless menu">
+    <div class="ui container">
+        <a class="header item" href="#">Project Name</a><a class="active item" href="#">Home</a><a class="item" href="#">About</a><a class="item" href="#">Contact</a>
+        <div class="ui dropdown item">
+            Dropdown
+            <div class="i dropdown icon"></div>
+            <div class="menu">
+                <a class="item" href="#">Action</a><a class="item" href="#">Another action</a><a class="item" href="#">Something else here</a>
+                <div class="ui fitted divider"></div>
+                <div class="header">
+                    Nav header
+                </div>
+                <a class="item" href="#">Separated link</a><a class="item" href="#">One more separated link</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
+</div>
+<h1 class="ui dividing header">
+    Alerts
+</h1>
+<div class="ui success message">
+    <div class="content">
+        <p>
+            <b>Well done!</b> You successfully read this important alert message.
+        </p>
     </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
+</div>
+<div class="ui info message">
+    <div class="content">
+        <p>
+            <b>Heads up!</b> This alert needs your attention, but it's not super important.
+        </p>
     </div>
+</div>
+<div class="ui warning message">
+    <div class="content">
+        <p>
+            <b>Warning!</b> Best check yo self, you're not looking too good.
+        </p>
+    </div>
+</div>
+<div class="ui error message">
+    <div class="content">
+        <p>
+            <b>Oh snap!</b> Change a few things up and try submitting again.
+        </p>
+    </div>
+</div>
+<div class="ui basic demo progress active" data-percent="3">
+    <div class="bar" style="transition-duration: 300ms; width: 3%;">
+        <div class="progress"></div>
+    </div>
+    <div class="label">3% Complete</div>
+</div>
+<div class="ui indicating demo progress active" data-percent="10">
+    <div class="bar" style="transition-duration: 300ms; width: 10%;"></div>
+    <div class="label">10% Done</div>
+</div>
+<div class="ui teal file demo progress active" data-total="20" data-value="6" data-percent="30">
+    <div class="bar" style="transition-duration: 300ms; width: 30%;"></div>
+    <div class="label">Uploading 6 of 20</div>
+</div>
+<div class="ui attached segment"></div>
+<div class="ui bottom attached demo progress active" data-percent="4">
+    <div class="bar" style="transition-duration: 300ms; width: 4%;"></div>
+</div>
+<h1 class="ui dividing header">
+    List groups
+</h1>
+<div class="ui three column grid">
+    <div class="column">
+        <div class="ui segments">
+            <div class="ui segment">
+                <p>
+                    Cras justo odio
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Dapibus ac facilisis in
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Morbi leo risus
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Porta ac consectetur ac
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Vestibulum at eros
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui segments">
+            <div class="ui inverted blue segment">
+                <p>
+                    Cras justo odio
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Dapibus ac facilisis in
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Morbi leo risus
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Porta ac consectetur ac
+                </p>
+            </div>
+            <div class="ui segment">
+                <p>
+                    Vestibulum at eros
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui fluid vertical menu">
+            <a class="active item">
+                <h1 class="ui medium header">
+                    List group item heading
+                </h1>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                </p>
+            </a><a class="item">
+                <h1 class="ui medium header">
+                    List group item heading
+                </h1>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                </p>
+            </a><a class="item">
+                <h1 class="ui medium header">
+                    List group item heading
+                </h1>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<h1 class="ui dividing header">
+    Panels
+</h1>
+<div class="ui three column grid">
+    <div class="column">
+        <div class="ui top attached message">
+            Panel title
+        </div>
+        <div class="ui bottom attached segment">
+            Panel content
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui top attached success message">
+            Panel title
+        </div>
+        <div class="ui bottom attached segment">
+            Panel content
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui top attached warning message">
+            Panel title
+        </div>
+        <div class="ui bottom attached segment">
+            Panel content
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui top attached blue message">
+            Panel title
+        </div>
+        <div class="ui bottom attached segment">
+            Panel content
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui top attached inverted message">
+            Panel title
+        </div>
+        <div class="ui bottom attached segment">
+            Panel content
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui top attached error message">
+            Panel title
+        </div>
+        <div class="ui bottom attached segment">
+            Panel content
+        </div>
+    </div>
+</div>
+<h1 class="ui dividing header">
+    Wells
+</h1>
+<div class="ui secondary segment">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+    </p>
 </div>
