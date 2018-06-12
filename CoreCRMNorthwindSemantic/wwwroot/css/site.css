@@ -1,1 +1,6 @@
 ﻿
+#flex-tabs {
+    display: flex !important; /* Will not work unless defined as display: flex */
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}

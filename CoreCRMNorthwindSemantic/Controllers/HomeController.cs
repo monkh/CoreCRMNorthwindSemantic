@@ -12,6 +12,7 @@ namespace CoreCRMNorthwindSemantic.Controllers
     {
         public IActionResult Index()
         {
+            TabSettings test = new TabSettings("test", Request.QueryString);
             return View();
         }
 
