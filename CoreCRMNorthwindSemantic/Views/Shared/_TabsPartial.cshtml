@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{ 
+    UserTabStateModel userTabState = ViewBag["UserTabStateModel"];
+}
+
+@if (userTabState.User.Identity.IsAuthenticated)
+{
+    <div class="ui container">
+        <div id="flex-tabs" class="ui tabular menu">
+            @foreach (var tab in userTabState.TabSettings)
+            {
+                <a class="tab item">@tab.TabName</a>
+            }
+            @*<a class="tab item active"> 12345.1.2.ABC</a>
+            <a class="tab item">12345.1.2.ABC</a>
+            <a class="tab item">12345.1.2.ABC</a>
+            <a class="tab item">12345.1.2.ABC</a>
+            <a class="tab item">12345.1.2.ABC</a>
+            <a class="tab item">12345.1.2.ABC</a>*@
+            <a class="tab item">12345.1.2.ABC</a>
+        </div>
+    </div>
+
+}
+

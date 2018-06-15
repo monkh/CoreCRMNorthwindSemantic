@@ -1,13 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace CoreCRMNorthwindSemantic.Models
 {
     public class UserTabStateModel
     {
-        public ApplicationUser user { get; set; }
-        public TabSettings[] tabSettings { get; set; }
+        public ClaimsPrincipal User { get; set; }
+        public List<TabSettings> TabSettings { get; set; }
+
+        public UserTabStateModel(ClaimsPrincipal user, List<TabSettings> tabSettings)
+        {
+            User = user;
+            TabSettings = tabSettings;
+        }
     }
 }

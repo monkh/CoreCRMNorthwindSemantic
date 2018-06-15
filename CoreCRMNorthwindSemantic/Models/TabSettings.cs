@@ -7,20 +7,28 @@ namespace CoreCRMNorthwindSemantic.Models
     public class TabSettings
     {
         public String TabName { get; set; }
+        public String URL { get; set; }
         public List<TabQuery> TabQueries { get; set; }
 
-        public TabSettings(String name, QueryString queryString)
+        public TabSettings(String name, String url, QueryString queryString)
         {
             PopulateTabQueries(queryString);
             TabName = name;
+            URL = url;
         }
+        public TabSettings(String name, String url)
+        {
+            TabName = name;
+            URL = url;
+        }
+
 
         public string ReturnQueryString()
         {
             string returnQueryString = null;
             foreach (var TQ in TabQueries)
             {
-                returnQueryString += $"&{TQ.GetQueryKey()}={TQ.GetQueryValue()}";
+                returnQueryString += $"&{TQ.QueryKey}={TQ.QueryValue}";
             }
             returnQueryString = returnQueryString.Substring(1);
             returnQueryString.Insert(0, "?");
@@ -36,9 +44,11 @@ namespace CoreCRMNorthwindSemantic.Models
                 foreach (var query in qString.Split("&"))
                 {
                     var querySplit = query.Split("=");
-                    TabQuery newTabQuery = new TabQuery();
-                    newTabQuery.SetQueryKey(querySplit[0]);
-                    newTabQuery.SetQueryValue(querySplit[1]);
+                    TabQuery newTabQuery = new TabQuery
+                    {
+                        QueryKey = querySplit[0],
+                        QueryValue = querySplit[1]
+                    };
                     tabQueries.Add(newTabQuery);
                 }
                 TabQueries = tabQueries;

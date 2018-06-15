@@ -8,11 +8,10 @@ using CoreCRMNorthwindSemantic.Models;
 
 namespace CoreCRMNorthwindSemantic.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {
-            TabSettings test = new TabSettings("test", Request.QueryString);
             return View();
         }
 
