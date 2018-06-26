@@ -19,6 +19,7 @@ namespace CoreCRMNorthwindSemantic
 {
     public class Startup
     {
+        // simple change to test webhook reciever
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
