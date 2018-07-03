@@ -19,7 +19,6 @@ namespace CoreCRMNorthwindSemantic
 {
     public class Startup
     {
-        // 1 more simple commit
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

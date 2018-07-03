@@ -6,6 +6,7 @@ namespace CoreCRMNorthwindSemantic.Models
 {
     public class TabSettings
     {
+        public Boolean Active { get; set; }
         public String TabName { get; set; }
         public String URL { get; set; }
         public List<TabQuery> TabQueries { get; set; }
@@ -20,6 +21,11 @@ namespace CoreCRMNorthwindSemantic.Models
         {
             TabName = name;
             URL = url;
+        }
+
+        public String ReturnActiveStatus()
+        {
+            return this.Active ? "active" : "";
         }
 
 

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using CoreCRMNorthwindSemantic.Models
+@using CoreCRMNorthwindSemantic.ViewComponents
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -26,7 +29,8 @@
                 <li class=""><a href="#" target="_blank"><span><i class="fa fa-fw fa-home"></i> Home</span></a></li>
                 <li class="active">
                     <a href="#"><span><i class="fa fa-fw fa-bars"></i> Menus</span><span class="cnt">2</span></a>
-                    <ul style="display: none;"> @* set display block to default to open *@  
+                    <ul style="display: none;">
+                        @* set display block to default to open *@
                         <li class="even"><a href="#"><span>Menu 1.1</span></a></li>
                         <li class="odd"><a href="#"><span>Menu 2</span></a></li>
                     </ul>
@@ -49,17 +53,18 @@
         <div class="ui grid">
             <div class="ui two column grid">
                 <div class="eight wide column right floated">
-                    <div class="ui container">
-                        <div id="flex-tabs" class="ui tabular menu">
-                            <a class="tab item active"> 12345.1.2.ABC</a>
-                            <a class="tab item">12345.1.2.ABC</a>
-                            <a class="tab item">12345.1.2.ABC</a>
-                            <a class="tab item">12345.1.2.ABC</a>
-                            <a class="tab item">12345.1.2.ABC</a>
-                            <a class="tab item">12345.1.2.ABC</a>
-                            <a class="tab item">12345.1.2.ABC</a>
-                        </div>
-                    </div>
+                    @await Component.InvokeAsync(nameof(TabsListViewComponent), new { User = User })
+                    @*<div class="ui container">
+                            <div id="flex-tabs" class="ui tabular menu">
+                                <a class="tab item active"> 12345.1.2.ABC</a>
+                                <a class="tab item">12345.1.2.ABC</a>
+                                <a class="tab item">12345.1.2.ABC</a>
+                                <a class="tab item">12345.1.2.ABC</a>
+                                <a class="tab item">12345.1.2.ABC</a>
+                                <a class="tab item">12345.1.2.ABC</a>
+                                <a class="tab item">12345.1.2.ABC</a>
+                            </div>
+                        </div>*@
 
                     <!-- Main content !-->
                     <div class="ui container ui raised segment bordered">
