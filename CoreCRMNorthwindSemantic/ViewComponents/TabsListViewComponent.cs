@@ -10,26 +10,26 @@ namespace CoreCRMNorthwindSemantic.ViewComponents
 {
     public class TabsListViewComponent : ViewComponent
     {
-        private readonly UserTabStateModel _userTabStateModel;
-        public TabsListViewComponent(UserTabStateModel userTabStateModel)
-        {
-            _userTabStateModel = userTabStateModel;
-        }
+        //private readonly UserTabStateModel _userTabStateModel;
+        //public TabsListViewComponent(UserTabStateModel userTabStateModel)
+        //{
+        //    _userTabStateModel = userTabStateModel;
+        //}
 
         public async Task<IViewComponentResult> InvokeAsync(ClaimsPrincipal user)
         {
-            var items = await GetUserTabsAsync(user);
+            var items = GetUserTabsAsync(user);
             return View(items);
         }
-        private Task<UserTabStateModel> GetUserTabsAsync(ClaimsPrincipal user)
+        private UserTabStateModel GetUserTabsAsync(ClaimsPrincipal user)
         {
             TabSettings tabSettings = new TabSettings("Home", "/");
             List<TabSettings> listTabSettngs = new List<TabSettings>();
             listTabSettngs.Add(tabSettings);
             var userTabState = new UserTabStateModel(user, listTabSettngs);
-            var taskUserTabState = new Task<UserTabStateModel>(() => userTabState);
+            //var taskUserTabState = new Task<UserTabStateModel>(() => userTabState);
             //var taskUserTabState = new Task<UserTabStateModel>((ob) => GetItemAsync((UserTabStateModel) ob).Result, userTabState);
-            return taskUserTabState;
+            return userTabState;
             //return db.ToDo.Where(x => x.IsDone == isDone &&
             //                     x.Priority <= maxPriority).ToListAsync();
         }

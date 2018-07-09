@@ -1,0 +1,25 @@
+﻿@model CoreCRMNorthwindSemantic.Models.UserTabStateModel
+
+
+@if (Model.User.Identity.IsAuthenticated && Model.TabSettings != null)
+{
+    <div class="ui container">
+        <div id="flex-tabs" class="ui tabular menu">
+            @foreach (var tab in Model.TabSettings)
+            {
+                <a href="@tab.URL" class="tab item @tab.ReturnActiveStatus()">@tab.TabName</a>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <div class="ui container">
+        <div id="flex-tabs" class="ui tabular menu">
+            @foreach (var tab in Model.TabSettings)
+            {
+                <a href="/" class="tab item active">Home</a>
+            }
+        </div>
+    </div>
+}

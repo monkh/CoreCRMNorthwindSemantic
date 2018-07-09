@@ -17,4 +17,10 @@
     <PackageReference Include="SendGrid" Version="9.9.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Home\Components\Default.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
 </Project>
