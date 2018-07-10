@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CoreCRMNorthwindSemantic.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using CoreCRMNorthwindSemantic.Models;
 using CoreCRMNorthwindSemantic.Services;
+using CoreCRMNorthwindSemantic.Areas.Identity.Data;
 
 namespace CoreCRMNorthwindSemantic
 {
@@ -36,15 +36,13 @@ namespace CoreCRMNorthwindSemantic
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<CoreCRMNorthwindSemanticIdentityContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            //services.AddDefaultIdentity<IdentityUser>()
-            //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+            //services.AddIdentity<CoreCRMNorthwindSemanticUser, IdentityRole>()
+            //    .AddEntityFrameworkStores<CoreCRMNorthwindSemanticIdentityContext>()
+            //    .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options => {
                 options.Password.RequireDigit = true;

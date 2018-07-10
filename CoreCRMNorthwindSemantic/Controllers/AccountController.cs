@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using CoreCRMNorthwindSemantic.Areas.Identity.Data;
 using CoreCRMNorthwindSemantic.Extensions;
 using CoreCRMNorthwindSemantic.Models;
 using CoreCRMNorthwindSemantic.Models.AccountViewModels;
@@ -19,14 +20,14 @@ namespace CoreCRMNorthwindSemantic.Controllers
     [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<CoreCRMNorthwindSemanticUser> _userManager;
+        private readonly SignInManager<CoreCRMNorthwindSemanticUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
 
         public AccountController(
-            UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager,
+            UserManager<CoreCRMNorthwindSemanticUser> userManager,
+            SignInManager<CoreCRMNorthwindSemanticUser> signInManager,
             IEmailSender emailSender,
             ILogger<AccountController> logger)
         {
@@ -218,7 +219,7 @@ namespace CoreCRMNorthwindSemantic.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new CoreCRMNorthwindSemanticUser { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -314,7 +315,7 @@ namespace CoreCRMNorthwindSemantic.Controllers
                 {
                     throw new ApplicationException("Error loading external login information during confirmation.");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new CoreCRMNorthwindSemanticUser { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
                 {

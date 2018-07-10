@@ -23,8 +23,7 @@
 </head>
 <body>
     <div class="ui left sidebar visible sticky fixed vertical menu">
-        <div id="cssmenu">
-            <!-- cssmenumaker.com ** Do not use this menu! in production unless paid for ** -->
+        <div id="ccrmns_menu">
             <ul>
                 <li class=""><a href="#" target="_blank"><span><i class="fa fa-fw fa-home"></i> Home</span></a></li>
                 <li class="active">
@@ -54,18 +53,6 @@
             <div class="ui two column grid">
                 <div class="eight wide column right floated">
                     @await Component.InvokeAsync("TabsList", new { User = User })
-                    @*<div class="ui container">
-                            <div id="flex-tabs" class="ui tabular menu">
-                                <a class="tab item active"> 12345.1.2.ABC</a>
-                                <a class="tab item">12345.1.2.ABC</a>
-                                <a class="tab item">12345.1.2.ABC</a>
-                                <a class="tab item">12345.1.2.ABC</a>
-                                <a class="tab item">12345.1.2.ABC</a>
-                                <a class="tab item">12345.1.2.ABC</a>
-                                <a class="tab item">12345.1.2.ABC</a>
-                            </div>
-                        </div>*@
-
                     <!-- Main content !-->
                     <div class="ui container ui raised segment bordered">
                         <div class="ui large breadcrumb">

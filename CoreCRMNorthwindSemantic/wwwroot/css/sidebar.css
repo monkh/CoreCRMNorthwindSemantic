@@ -1,5 +1,5 @@
 ﻿/* 
-            cssmenumaker.com ** Do not use this menu! in production unless paid for **
+            ccrmns_menumaker.com ** Do not use this menu! in production unless paid for **
         */
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);*/
 
@@ -8,10 +8,10 @@
 }
 
 /* Base Styles */
-#cssmenu,
-#cssmenu ul,
-#cssmenu li,
-#cssmenu a {
+#ccrmns_menu,
+#ccrmns_menu ul,
+#ccrmns_menu li,
+#ccrmns_menu a {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,15 +24,15 @@
     position: relative;
 }
 
-    #cssmenu a {
+    #ccrmns_menu a {
         line-height: 1.3;
     }
 
-#cssmenu {
+#ccrmns_menu {
     width: 250px;
 }
 
-#cssmenu > ul > li > a {
+#ccrmns_menu > ul > li > a {
     padding-right: 40px;
     font-size: 25px;
     font-weight: bold;
@@ -43,7 +43,7 @@
     text-transform: uppercase;
 }
 
-        #cssmenu > ul > li > a > span {
+        #ccrmns_menu > ul > li > a > span {
             background: #4e5d6c;
             padding: 10px;
             display: block;
@@ -51,23 +51,23 @@
             font-weight: 300;
         }
 
-        #cssmenu > ul > li > a:hover {
+        #ccrmns_menu > ul > li > a:hover {
             text-decoration: none;
         }
 
-    #cssmenu > ul > li.active {
+    #ccrmns_menu > ul > li.active {
         border-bottom: none;
     }
 
-        #cssmenu > ul > li.active > a {
+        #ccrmns_menu > ul > li.active > a {
             color: #fff;
         }
 
-            #cssmenu > ul > li.active > a span {
+            #ccrmns_menu > ul > li.active > a span {
                 background: #39444e;
             }
 
-    #cssmenu span.cnt {
+    #ccrmns_menu span.cnt {
         position: absolute;
         top: 8px;
         right: 15px;
@@ -76,30 +76,30 @@
         background: none;
     }
     /* Sub menu */
-    #cssmenu ul ul {
+    #ccrmns_menu ul ul {
         display: none;
     }
 
-        #cssmenu ul ul li {
+        #ccrmns_menu ul ul li {
             border: 1px solid #e0e0e0;
             border-top: 0;
         }
 
-        #cssmenu ul ul a {
+        #ccrmns_menu ul ul a {
             padding: 10px;
             display: block;
             color: #bd5916;
             font-size: 13px;
         }
 
-            #cssmenu ul ul a:hover {
+            #ccrmns_menu ul ul a:hover {
                 color: #df691a;
             }
 
-        #cssmenu ul ul li.odd {
+        #ccrmns_menu ul ul li.odd {
             background: #f4f4f4;
         }
 
-        #cssmenu ul ul li.even {
+        #ccrmns_menu ul ul li.even {
             background: #fff;
         }

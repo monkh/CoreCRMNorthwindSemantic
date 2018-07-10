@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CoreCRMNorthwindSemantic.Data.Migrations
+namespace CoreCRMNorthwindSemantic.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {
